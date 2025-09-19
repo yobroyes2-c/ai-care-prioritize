@@ -14,7 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      triage_logs: {
+        Row: {
+          created_at: string
+          explanation: string[]
+          id: string
+          patient: Json
+          probabilities: Json
+          recommended_action: string
+          recommended_wait: number
+          triage_level: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          explanation: string[]
+          id?: string
+          patient: Json
+          probabilities: Json
+          recommended_action: string
+          recommended_wait: number
+          triage_level: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          explanation?: string[]
+          id?: string
+          patient?: Json
+          probabilities?: Json
+          recommended_action?: string
+          recommended_wait?: number
+          triage_level?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

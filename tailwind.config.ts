@@ -31,6 +31,18 @@ export default {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        critical: {
+          DEFAULT: "hsl(var(--critical))",
+          foreground: "hsl(var(--critical-foreground))",
+        },
+        moderate: {
+          DEFAULT: "hsl(var(--moderate))",
+          foreground: "hsl(var(--moderate-foreground))",
+        },
+        mild: {
+          DEFAULT: "hsl(var(--mild))",
+          foreground: "hsl(var(--mild-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
